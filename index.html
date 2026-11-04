@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a0e">
+  <meta name="description" content="Diamantide — melodic progressive metal from the San Francisco Bay Area. Explore the music, videos, live performances and official merch.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Diamantide | Melodic Progressive Metal">
+  <meta property="og:description" content="Heavy in sound. Human at heart. Discover Diamantide.">
+  <meta property="og:url" content="https://diamantide.pro/">
+  <meta property="og:image" content="https://diamantide.pro/logo.webp">
+  <title>Diamantide | Melodic Progressive Metal</title>
+  <link rel="canonical" href="https://diamantide.pro/">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme:dark; --bg:#07080b; --panel:#0c0e12; --panel-2:#101319; --ink:#f5f5f8; --muted:#a4aab7; --light:#d7e0f2; --accent:#9ab8e9; --line:rgba(215,227,247,.16); --display:'Michroma',system-ui,sans-serif; --body:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+    *,*::before,*::after {box-sizing:border-box}
+    html {scroll-behavior:smooth; scroll-padding-top:95px}
+    body {margin:0; background:var(--bg); color:var(--ink); font-family:var(--body); font-size:16px; -webkit-font-smoothing:antialiased; overflow-x:hidden}
+    body::after {content:""; pointer-events:none; position:fixed; inset:0; z-index:60; opacity:.12; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.13'/%3E%3C/svg%3E")}
+    ::selection {background:#8caad2;color:#07101a}
+    a {color:inherit;text-decoration:none}
+    a:focus-visible,button:focus-visible {outline:2px solid #a9c7ff; outline-offset:5px}
+    img {display:block;max-width:100%}
+    button {font:inherit}
+    .wrap {width:min(1200px,calc(100% - 52px));margin-inline:auto}
+    .eyebrow {font:400 .66rem/1.8 var(--display); text-transform:uppercase; letter-spacing:.24em; color:var(--accent)}
+    .muted {color:var(--muted)}
+    .line-mark {display:inline-block;width:36px;height:1px;background:linear-gradient(90deg,var(--accent),transparent);vertical-align:middle;margin-right:13px;transform:translateY(-2px)}
+    .top-progress {position:fixed;top:0;left:0;z-index:101;height:2px;width:0;background:linear-gradient(90deg,#5b759b,#d0e1fa);box-shadow:0 0 13px #9cbcf9;transition:width .08s linear}
+    .site-header {height:84px;position:sticky;top:0;z-index:100;background:rgba(5,7,10,.82);border-bottom:1px solid rgba(214,228,248,.1);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+    .header-inner {height:100%;display:flex;align-items:center;gap:32px}
+    .brand {flex:0 0 auto;width:213px;display:inline-flex;align-items:center}
+    .brand img {width:100%;height:auto;filter:drop-shadow(0 0 8px rgba(150,186,236,.07))}
+    .desktop-nav {display:flex;align-items:center;gap:28px;margin-left:auto}
+    .desktop-nav a {font-size:.69rem;font-weight:650;text-transform:uppercase;letter-spacing:.17em;color:#b8bdc7;transition:color .2s}
+    .desktop-nav a:hover,.socials a:hover {color:white}
+    .nav-cta {border:1px solid rgba(195,215,244,.44);border-radius:2px;padding:13px 19px;font:.61rem var(--display);letter-spacing:.07em;white-space:nowrap;transition:background .2s,border-color .2s}
+    .nav-cta:hover {background:rgba(147,180,233,.11);border-color:#a2bee4}
+    .menu-toggle {display:none;margin-left:auto;appearance:none;background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:2px;padding:10px 13px;text-transform:uppercase;font:.6rem var(--display);letter-spacing:.12em}
+    .mobile-nav {display:none}
+    .hero {position:relative;isolation:isolate;min-height:min(790px,calc(100svh - 84px));display:flex;align-items:center;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(ellipse 48% 55% at 51% 40%,#192233 0,#0c1018 42%,transparent 85%),radial-gradient(circle at 89% 7%,rgba(75,96,130,.12),transparent 31%),#06070a}
+    .hero::before {content:"";position:absolute;z-index:-1;width:min(930px,100vw);height:min(930px,100vw);border:1px solid rgba(156,194,241,.10);border-radius:50%;left:50%;top:45%;transform:translate(-50%,-50%);box-shadow:0 0 0 85px rgba(151,188,234,.012),0 0 0 175px rgba(151,188,234,.012),0 0 160px rgba(60,83,116,.06) inset}
+    .hero::after {content:"";position:absolute;z-index:-1;inset:0;opacity:.26;background-image:linear-gradient(90deg,transparent 0%,transparent 49.95%,rgba(164,196,240,.16) 50%,transparent 50.05%),linear-gradient(0deg,transparent 0%,transparent 49.95%,rgba(164,196,240,.06) 50%,transparent 50.05%);background-size:165px 165px;mask-image:linear-gradient(0deg,black,transparent 78%)}
+    .hero-inner {position:relative;text-align:center;padding:82px 0 96px}
+    .hero-tag {display:flex;align-items:center;justify-content:center;gap:14px;font:400 .65rem var(--display);text-transform:uppercase;letter-spacing:.23em;color:#9baac3}
+    .hero-tag::before,.hero-tag::after {content:"";width:38px;height:1px;background:linear-gradient(90deg,transparent,#a5b8cf)}
+    .hero-tag::after {transform:rotate(180deg)}
+    .hero-logo {width:min(1030px,100%);height:auto;object-fit:contain;margin:47px auto 34px;filter:drop-shadow(0 0 35px rgba(189,208,240,.16))}
+    .hero h1 {margin:8px 0 18px;font:400 clamp(1.38rem,2.55vw,2.7rem)/1.35 var(--display);letter-spacing:.025em;text-transform:uppercase}
+    .hero h1 em {font-style:normal;color:#aec2e0}
+    .hero-copy {max-width:690px;margin:0 auto;color:#b5bac4;font-size:1.08rem;line-height:1.75}
+    .actions {display:flex;flex-wrap:wrap;gap:13px;margin-top:32px;align-items:center}
+    .hero .actions {justify-content:center}
+    .button {display:inline-flex;align-items:center;justify-content:center;min-height:49px;padding:14px 22px;border:1px solid rgba(196,217,244,.48);border-radius:2px;font:400 .65rem/1.3 var(--display);text-transform:uppercase;letter-spacing:.08em;transition:transform .2s,background .2s,border-color .2s}
+    .button:hover {transform:translateY(-2px);border-color:#d4e2f5}
+    .button-primary {background:linear-gradient(115deg,#dde5f2 0,#9cabc1 55%,#e5ecf9 100%);color:#09101b;border-color:transparent}
+    .button-primary:hover {background:#e6efff}
+    .button-ghost {background:rgba(10,12,16,.48);color:var(--ink)}
+    .button .arrow {font:1.1rem var(--body);margin-left:16px}
+    .hero-footer {display:flex;justify-content:center;gap:38px;margin-top:64px;color:#8993a3;font-size:.65rem;text-transform:uppercase;letter-spacing:.18em}
+    .hero-footer span+span::before {content:"◆";font-size:.37rem;margin-right:38px;color:#8298b6;vertical-align:2px}
+    .section {padding:118px 0;position:relative}
+    .section-title {font:400 clamp(1.55rem,3.15vw,2.75rem)/1.4 var(--display);letter-spacing:-.03em;text-transform:uppercase;margin:14px 0 18px}
+    .section-intro {font-size:1.08rem;line-height:1.78;max-width:650px;color:#aeb5c1;margin:0}
+    .section-head {display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:52px}
+    .section-head .section-intro {max-width:420px}
+    .divider {height:1px;width:100%;background:linear-gradient(90deg,transparent,var(--line),transparent)}
+    .music-section {background:radial-gradient(ellipse 35% 40% at 15% 44%,rgba(78,97,132,.11),transparent 90%),#090b10}
+    .music-grid {display:grid;grid-template-columns:minmax(290px,.88fr) 1.12fr;gap:clamp(42px,7vw,112px);align-items:center}
+    .about-grid {display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+    .album-art {position:relative;aspect-ratio:1/1.04;background:radial-gradient(circle at 54% 41%,#283345 0,#111820 31%,#080a0e 72%);border:1px solid rgba(192,212,240,.20);box-shadow:0 22px 90px #0009;overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .album-art::before {content:"";position:absolute;inset:25px;border:1px solid rgba(203,219,238,.14)}
+    .album-art::after {content:"";position:absolute;inset:45px;border-radius:50%;border:1px solid rgba(167,193,226,.11);box-shadow:0 0 0 35px rgba(255,255,255,.008)}
+    .album-art img {position:relative;z-index:1;width:78%;height:auto;object-fit:contain;filter:drop-shadow(0 0 45px rgba(130,170,220,.12));transition:transform .6s}
+    .album-art:hover img {transform:scale(1.035)}
+    .art-label {position:absolute;z-index:2;bottom:30px;left:30px;right:30px;text-align:center;text-transform:uppercase;font:400 .62rem var(--display);letter-spacing:.19em;color:#d2d5de}
+    .album-year {position:absolute;z-index:2;top:25px;left:30px;color:#9dacbf;font:400 .57rem var(--display)}
+    .album-details h3 {font:400 clamp(2.1rem,3.75vw,3.8rem)/1.12 var(--display);letter-spacing:-.04em;margin:7px 0 20px;text-transform:uppercase}
+    .album-details p {color:#aeb7c3;line-height:1.8;margin:0 0 23px;max-width:590px}
+    .track-list {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px 22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:30px 0 29px;padding:12px 0}
+    .track {display:flex;align-items:baseline;gap:13px;padding:11px 0;font-size:.88rem;border-bottom:1px solid rgba(200,220,248,.075)}
+    .track:nth-last-child(-n+2) {border:0}
+    .track span:first-child {font:400 .6rem var(--display);color:#7489a8}
+    .track span:last-child {color:#d7d9e0}
+    .tiny-note {color:#8792a2!important;font-size:.77rem!important;line-height:1.65!important;margin-top:16px!important}
+    .video-section {background:#08090c}
+    .video-grid {display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:center}
+    .video-frame {aspect-ratio:16/9;background:#10141e;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.4);overflow:hidden}
+    .video-frame iframe {display:block;width:100%;height:100%;border:0}
+    .video-copy p {color:#aeb5c1;line-height:1.85}
+    .live-section {background:linear-gradient(180deg,#0c1017 0,#08090c 100%)}
+    .live-layout {display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+    .show-list {border-top:1px solid var(--line)}
+    .show {display:grid;grid-template-columns:95px 1fr;gap:24px;padding:29px 0;border-bottom:1px solid var(--line)}
+    .show-date {font:400 .69rem/1.8 var(--display);color:var(--accent)}
+    .show h3 {font:400 1rem/1.5 var(--display);margin:0 0 7px}
+    .show p {margin:0;color:#a2adbc;line-height:1.6;font-size:.9rem}
+    .merch-section {background:#07080b}
+    .merch-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .merch-card {position:relative;min-height:410px;background:radial-gradient(circle at 45% 35%,#1e293b,#10141b 52%,#0b0c0f 80%);border:1px solid var(--line);padding:26px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}
+    .merch-card:nth-child(2) {background:radial-gradient(circle at 55% 30%,#25232e,#13121b 54%,#0c0c10 80%)}
+    .merch-card:nth-child(3) {background:radial-gradient(circle at 45% 35%,#1a2529,#11191d 53%,#0b0c10 80%)}
+    .merch-card::before {content:"";position:absolute;inset:13px;border:1px solid rgba(209,221,244,.1);pointer-events:none}
+    .merch-card img {position:absolute;top:12%;left:10%;width:80%;height:56%;object-fit:contain;opacity:.93;transition:transform .55s;filter:drop-shadow(0 0 25px rgba(150,179,219,.12))}
+    .merch-card:hover img {transform:scale(1.07)}
+    .merch-card .number {position:absolute;top:30px;left:30px;font:400 .55rem var(--display);color:#8d9db3}
+    .merch-card h3 {position:relative;font:400 1.05rem/1.6 var(--display);text-transform:uppercase;margin:0 0 6px}
+    .merch-card p {position:relative;color:#a0a9b8;font-size:.88rem;line-height:1.65;margin:0}
+    .merch-outro {margin-top:24px;display:flex;justify-content:space-between;gap:20px;align-items:center;color:#aeb7c6;font-size:.9rem}
+    .merch-outro a {color:#d5e2f3;border-bottom:1px solid #a0b3ce;padding-bottom:3px}
+    .contact-section {border-top:1px solid var(--line);background:radial-gradient(ellipse 45% 65% at 85% 45%,rgba(59,77,112,.2),transparent),#0c1016}
+    .contact-grid {display:grid;grid-template-columns:1.2fr .8fr;gap:80px;align-items:center}
+    .contact-section .section-title {max-width:750px}
+    .socials {display:flex;flex-wrap:wrap;gap:14px;margin:32px 0 0}
+    .socials a {border-bottom:1px solid rgba(202,216,239,.40);padding-bottom:7px;font:.66rem var(--display);color:#b3c6e5;text-transform:uppercase;letter-spacing:.05em;transition:color .2s}
+    .socials a+a {margin-left:20px}
+    .contact-emblem {width:100%;max-height:360px;object-fit:contain;opacity:.62;filter:drop-shadow(0 0 60px rgba(137,169,218,.09))}
+    .site-footer {border-top:1px solid var(--line);padding:35px 0;background:#06070a}
+    .footer-inner {display:flex;justify-content:space-between;gap:20px;align-items:center;color:#8591a0;font-size:.76rem}
+    .footer-inner .wordmark {font:400 .8rem var(--display);color:#e0e4ed}
+    .footer-inner .pronounce {font-size:.69rem;color:#8994a2}
+    .fade {opacity:0;transform:translateY(20px);transition:opacity .75s ease,transform .75s ease}
+    .fade.visible {opacity:1;transform:none}
+    @media(max-width:1000px) {
+      .brand {width:180px} .desktop-nav {gap:16px} .desktop-nav a {font-size:.62rem;letter-spacing:.12em} .nav-cta {padding:12px 14px}
+      .video-grid,.live-layout {gap:35px} .music-grid {gap:45px}
+      .merch-card {min-height:370px}
+    }
+    @media(max-width:760px) {
+      html {scroll-padding-top:72px} .wrap {width:min(100% - 38px,580px)} .site-header {height:70px} .header-inner {gap:12px}
+      .brand {width:177px} .desktop-nav,.nav-cta {display:none} .menu-toggle {display:block}
+      .mobile-nav {display:none;position:absolute;top:70px;left:0;right:0;background:#0c0e13;border-bottom:1px solid var(--line);padding:15px 21px 26px;box-shadow:0 20px 32px #0008}
+      .site-header.nav-open .mobile-nav {display:flex;flex-direction:column;gap:0}
+      .mobile-nav a {padding:14px 8px;border-bottom:1px solid rgba(255,255,255,.07);font:.71rem var(--display);text-transform:uppercase;color:#dde2eb}
+      .hero {min-height:630px} .hero-inner {padding:78px 0 80px} .hero-logo {margin:45px auto 39px} .hero-tag {font-size:.51rem;letter-spacing:.12em;gap:8px} .hero-tag::before,.hero-tag::after {width:16px}
+      .hero h1 {font-size:clamp(1.33rem,4.2vw,2rem)} .hero-copy {font-size:.98rem} .hero-footer {margin-top:50px;gap:13px;font-size:.55rem;letter-spacing:.075em;flex-wrap:wrap} .hero-footer span+span::before {margin-right:13px}
+      .section {padding:77px 0} .section-head {display:block;margin-bottom:33px} .section-head .section-intro {max-width:unset}
+      .section-title {font-size:clamp(1.43rem,4.4vw,2.1rem)} .section-intro {font-size:.99rem}
+      .music-grid,.about-grid,.video-grid,.live-layout,.contact-grid {grid-template-columns:1fr;gap:38px} .album-art {max-width:500px;margin-inline:auto;width:100%} .music-grid .album-details {order:2}
+      .video-copy {order:-1} .merch-grid {grid-template-columns:1fr;gap:15px} .merch-card {min-height:340px}
+      .merch-card img {top:5%;height:65%} .merch-outro {display:block;line-height:1.8} .merch-outro a {display:inline-block;margin-top:8px}
+      .contact-emblem {display:none} .footer-inner {flex-wrap:wrap;gap:13px} .footer-inner .pronounce {width:100%}
+    }
+    @media(max-width:440px) {
+      .wrap {width:calc(100% - 32px)} .brand {width:154px} .hero {min-height:590px} .hero-copy {font-size:.94rem}
+      .button {width:100%;min-height:47px} .actions {width:100%;flex-direction:column} .hero-footer {line-height:2}
+      .track-list {grid-template-columns:1fr} .track:nth-last-child(2) {border-bottom:1px solid rgba(200,220,248,.075)}
+      .show {grid-template-columns:1fr;gap:8px} .socials a+a {margin-left:7px}
+    }
+    @media(prefers-reduced-motion:reduce) {html {scroll-behavior:auto} *,*::before,*::after {animation-duration:.01ms!important;transition-duration:.01ms!important} .fade {opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <div class="top-progress" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <div class="header-inner wrap">
+      <a class="brand" href="#top" aria-label="Diamantide — back to top"><img src="logo.webp" alt="Diamantide logo" width="213" height="56"></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#music">Music</a><a href="#video">Video</a><a href="#live">Live</a><a href="#merch">Merch</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="https://orcd.co/diamantide" target="_blank" rel="noopener noreferrer">LISTEN NOW ↗</a>
+      <button class="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false">MENU</button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="#about">About</a><a href="#music">Music</a><a href="#video">Video</a><a href="#live">Live</a><a href="#merch">Merch</a><a href="#contact">Contact</a>
+      <a href="https://orcd.co/diamantide" target="_blank" rel="noopener noreferrer">Listen to the album ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div class="hero-tag">San Francisco Bay Area <span aria-hidden="true">◆</span> Melodic Progressive Metal</div>
+        <img class="hero-logo" src="logo.webp" alt="Diamantide — chrome D and diamond emblem with official wordmark" width="1030" height="250" fetchpriority="high">
+        <h1 id="hero-title">HEAVY IN SOUND. <em>HUMAN AT HEART.</em></h1>
+        <p class="hero-copy">Intricate riffs. Cinematic atmosphere. Powerful melodies. Music shaped by the experiences that make us human.</p>
+        <div class="actions">
+          <a class="button button-primary" href="https://orcd.co/diamantide" target="_blank" rel="noopener noreferrer">Listen to the album <span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="#video">Watch a video <span class="arrow" aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-footer" aria-label="Band highlights"><span>Melodic</span><span>Progressive</span><span>Power Metal</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="eyebrow fade"><span class="line-mark"></span>THE BAND</div>
+        <div class="section-head fade">
+          <h2 class="section-title" id="about-title">DIAMANTIDE IS<br>MORE THAN A SOUND.</h2>
+          <p class="section-intro">Formed in the San Francisco Bay Area, Diamantide brings together the precision of progressive metal, the force of heavy riffs, and an unmistakably melodic heart.</p>
+        </div>
+        <div class="divider fade"></div>
+        <div class="about-grid" style="padding-top:36px">
+          <p class="section-intro fade">Our songs explore identity, fear, love, loss, and resilience — stories told with music that can be intimate one moment and thunderous the next.</p>
+          <p class="section-intro fade">From Max Maggiari’s compositions to Dia’s lyrics and vocal melodies, every arrangement is built to connect. <span style="display:block;margin-top:16px;color:#859bb8;font-size:.85rem">Pronounced: <strong style="color:#dbe4f4;font-weight:500">Dee-ah-MAHN-tee-deh</strong></span></p>
+          <p class="section-intro fade" style="grid-column:1/-1;max-width:none;font-size:.95rem;color:#c9d3e6"><strong style="font-weight:500;color:#fff">Dia</strong> — Vocals &nbsp;·&nbsp; <strong style="font-weight:500;color:#fff">Max Maggiari</strong> — Guitars &amp; Keys &nbsp;·&nbsp; <strong style="font-weight:500;color:#fff">Alex Sandor Tamas</strong> — Bass &nbsp;·&nbsp; <strong style="font-weight:500;color:#fff">Kurt Becker</strong> — Drums</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section music-section" id="music" aria-labelledby="music-title">
+      <div class="wrap music-grid">
+        <div class="album-art fade" aria-label="Diamantide debut album visual">
+          <span class="album-year">AUG 2024 / DEBUT ALBUM</span>
+          <img src="emblem.webp" alt="Chrome Diamantide D emblem with diamond" loading="lazy" width="800" height="551">
+          <span class="art-label">DIAMANTIDE · SELF-TITLED</span>
+        </div>
+        <div class="album-details fade">
+          <div class="eyebrow"><span class="line-mark"></span>THE MUSIC</div>
+          <h2 class="section-title" id="music-title">DIAMANTIDE</h2>
+          <p>The self-titled debut album moves between relentless rhythms, sweeping melodies, and moments of raw vulnerability. Listen wherever you stream music.</p>
+          <div class="track-list" aria-label="Album tracklist">
+            <div class="track"><span>01</span><span>Madness</span></div>
+            <div class="track"><span>02</span><span>Poor Kings</span></div>
+            <div class="track"><span>03</span><span>Faces</span></div>
+            <div class="track"><span>04</span><span>Fear</span></div>
+            <div class="track"><span>05</span><span>Born Again</span></div>
+            <div class="track"><span>06</span><span>Fragments of Innocence</span></div>
+            <div class="track"><span>07</span><span>Take Me to Life</span></div>
+            <div class="track"><span>08</span><span>Madness – Bonus (feat. Mark Basile)</span></div>
+          </div>
+          <a class="button button-primary" href="https://orcd.co/diamantide" target="_blank" rel="noopener noreferrer">STREAM THE ALBUM <span class="arrow" aria-hidden="true">↗</span></a>
+          <p class="tiny-note">Featuring guest appearances by Tom S. Englund, Mark Basile and Roberto Tiranti.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section video-section" id="video" aria-labelledby="video-title">
+      <div class="wrap video-grid">
+        <div class="video-frame fade">
+          <iframe src="https://www.youtube-nocookie.com/embed/FpGwXnaNpWk" title="Diamantide — Poor Kings official video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-copy fade">
+          <div class="eyebrow"><span class="line-mark"></span>WATCH</div>
+          <h2 class="section-title" id="video-title">POOR KINGS</h2>
+          <p>A song about power, longing, and the love that gets lost behind a crown. Step into the world of Diamantide.</p>
+          <div class="actions"><a class="button button-ghost" href="https://www.youtube.com/@Diamantide" target="_blank" rel="noopener noreferrer">More videos on YouTube <span class="arrow" aria-hidden="true">↗</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section live-section" id="live" aria-labelledby="live-title">
+      <div class="wrap live-layout">
+        <div class="fade">
+          <div class="eyebrow"><span class="line-mark"></span>ON STAGE</div>
+          <h2 class="section-title" id="live-title">MADE TO BE<br>HEARD LIVE.</h2>
+          <p class="section-intro">The stage is where our songs come alive. Follow our official pages for new dates and live updates.</p>
+          <div class="actions"><a class="button button-ghost" href="https://www.instagram.com/diamantideofficial/" target="_blank" rel="noopener noreferrer">Follow live updates <span class="arrow" aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="show-list fade" aria-label="Selected past appearances">
+          <div class="show"><div class="show-date">OCT 29, 2026</div><div><h3>WHISKY A GO GO</h3><p>West Hollywood, California · With Vixen</p></div></div>
+          <div class="show"><div class="show-date">APR 2026</div><div><h3>DNA LOUNGE</h3><p>San Francisco, California · Supporting Powerman 5000</p></div></div>
+          <div class="show"><div class="show-date">SF</div><div><h3>LIVING DEAD GIRL</h3><p>San Francisco, California · Support appearance</p></div></div>
+          <div class="show"><div class="show-date">UPDATES</div><div><h3>MORE FROM DIAMANTIDE</h3><p>Shows and announcements on our official social channels.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section merch-section" id="merch" aria-labelledby="merch-title">
+      <div class="wrap">
+        <div class="section-head fade">
+          <div><div class="eyebrow"><span class="line-mark"></span>THE COLLECTION</div><h2 class="section-title" id="merch-title">TAKE A PIECE<br>OF DIAMANTIDE.</h2></div>
+          <p class="section-intro">From everyday staples to physical music and handmade details, our merch carries the same identity as our songs.</p>
+        </div>
+        <div class="merch-grid">
+          <article class="merch-card fade"><span class="number">01 / APPAREL</span><img src="emblem.webp" alt="Diamantide chrome D emblem" loading="lazy"><h3>Band T-shirts</h3><p>Wear the music.</p></article>
+          <article class="merch-card fade"><span class="number">02 / ACCESSORIES</span><img src="emblem.webp" alt="Diamantide diamond emblem" loading="lazy"><h3>Tote bags & caps</h3><p>Band essentials with a personal touch.</p></article>
+          <article class="merch-card fade"><span class="number">03 / COLLECTIBLES</span><img src="emblem.webp" alt="Diamantide D monogram" loading="lazy"><h3>CDs & books</h3><p>Something real to take home.</p></article>
+        </div>
+        <div class="merch-outro fade"><span>Interested in merch or availability?</span><a href="mailto:connect@diamantide.pro?subject=Merch">connect@diamantide.pro ↗</a></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div class="fade">
+          <div class="eyebrow"><span class="line-mark"></span>STAY CONNECTED</div>
+          <h2 class="section-title" id="contact-title">THE NEXT CHAPTER<br>STARTS HERE.</h2>
+          <p class="section-intro">Follow the music. Catch the next show. For booking, press, and collaboration inquiries, reach out directly — our EPK is available on request.</p>
+          <div style="display:grid;gap:18px;margin:30px 0 34px">
+            <div><div class="eyebrow">Booking &amp; Press · EPK</div><a href="mailto:booking@diamantide.pro" style="font:400 clamp(1rem,2.2vw,1.35rem)/1.5 var(--display);color:#fff">booking@diamantide.pro</a></div>
+            <div><div class="eyebrow">General</div><a href="mailto:connect@diamantide.pro" style="font:400 clamp(1rem,2.2vw,1.35rem)/1.5 var(--display);color:#fff">connect@diamantide.pro</a></div>
+          </div>
+          <div class="socials" aria-label="Official Diamantide channels">
+            <a href="https://www.instagram.com/diamantideofficial/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="https://www.facebook.com/DiamantideBand" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+            <a href="https://www.youtube.com/@Diamantide" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+          </div>
+        </div>
+        <img class="contact-emblem fade" src="emblem.webp" alt="Diamantide chrome diamond emblem" loading="lazy" width="800" height="551">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner"><span class="wordmark">DIAMANTIDE</span><span>© <span id="year">2026</span> Diamantide · All rights reserved.</span><span class="pronounce">Dee-ah-MAHN-tee-deh · San Francisco Bay Area</span></div>
+  </footer>
+  <script>
+    (() => {
+      const header = document.querySelector('.site-header');
+      const toggle = document.querySelector('.menu-toggle');
+      const mobile = document.querySelector('.mobile-nav');
+      const closeMenu = () => {header.classList.remove('nav-open');toggle.setAttribute('aria-expanded','false');};
+      toggle.addEventListener('click', () => {const open = header.classList.toggle('nav-open');toggle.setAttribute('aria-expanded',String(open));});
+      mobile.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+      document.addEventListener('keydown', event => {if(event.key === 'Escape') closeMenu();});
+      document.addEventListener('click', event => {if(!header.contains(event.target)) closeMenu();});
+      document.getElementById('year').textContent = String(new Date().getFullYear());
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {if(entry.isIntersecting) {entry.target.classList.add('visible');observer.unobserve(entry.target);}});
+        }, {threshold:.09,rootMargin:'0px 0px -24px 0px'});
+        document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+      } else {document.querySelectorAll('.fade').forEach(el => el.classList.add('visible'));}
+      let pending = false;
+      const progress = document.querySelector('.top-progress');
+      const updateScroll = () => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.width = `${max > 0 ? Math.max(0, Math.min(100,window.scrollY / max * 100)) : 0}%`;
+        pending = false;
+      };
+      window.addEventListener('scroll', () => {if (!pending) {requestAnimationFrame(updateScroll);pending = true;}}, {passive:true});
+      updateScroll();
+    })();
+  </script>
+</body>
+</html>
